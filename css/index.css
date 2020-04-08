@@ -350,3 +350,22 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home #form {
+  margin: 0 auto 3%;
+  display: flex;
+  justify-content: center;
+}
+.home #form .textInput {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+}
+.home #form .passInput {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+}
+.home #form .submit {
+  margin: 2%;
+  border-radius: 10px;
+}
