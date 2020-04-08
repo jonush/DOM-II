@@ -94,17 +94,12 @@ window.addEventListener('resize', change);
 
 //stopPropagation
 const card = document.querySelectorAll('.destination');
-function disappear1(event) {
-    card[1].style.display = 'none';
-    event.stopPropagation();
+function disappear(event) {
+    alert('This is an alert!');
+    //event.stopPropagation();
 }
-button[1].addEventListener('click', disappear1);
-
-function disappear2(event) {
-    card[2].style.display = 'none';
-    event.stopPropagation();
-}
-button[2].addEventListener('click', disappear2);
+card[1].addEventListener('click', disappear);
+button[1].addEventListener('click', disappear);
 
 // preventDefault()
 function refresh(event) {
@@ -113,3 +108,6 @@ function refresh(event) {
     }
 }
 document.addEventListener('click', refresh);
+
+// GSAP animations
+gsap.to('.logo-heading', {rotation: 720, x: 100, duration: 5});
